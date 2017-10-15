@@ -1,0 +1,9 @@
+<!doctype html>
+<title>iD</title>
+{% if display %}
+ {% autoescape false %}  
+  <b>IDs: {{ display }}!</b>
+ {% endautoescape %}
+{% else %}
+  <h1>No IDs Detected Yet</h1>
+{% endif %}
